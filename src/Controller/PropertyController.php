@@ -10,7 +10,7 @@ class PropertyController extends AbstractController
     /**
      * @Route("/property", name="property")
      */
-    public function index()
+    public function property()
     {
         return $this->render('property/index.html.twig', [
             'controller_name' => 'PropertyController',
@@ -18,7 +18,7 @@ class PropertyController extends AbstractController
     }
 
     /**
-     * @Route("/rooms", name="property")
+     * @Route("/rooms", name="rooms")
      */
     public function rooms()
     {
