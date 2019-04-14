@@ -230,7 +230,7 @@ a:hover {
 /*------/ Space Padding /------*/
 
 .section-t8 {
-  padding-top: 8rem;
+  padding-top: 6rem;
 }
 
 .section-t4 {
@@ -2022,4 +2022,48 @@ footer .credits {
   .box-collapse .title-box-d .title-d {
     font-size: 1.3rem;
   }
+}
+
+
+/*My CSS*/
+.btn-info {
+  background-color: black;
+  color: white;
+  border-radius: 0px;
+  letter-spacing: .05rem;
+  padding: 10px;
+  border-style: none;
+}
+
+.btn.btn-info:hover {
+  background-color: #2eca6a;
+  color: #000000;
+}
+
+.btn-serch{
+  background-color: black;
+  color: white;
+  border-radius: 0px;
+  letter-spacing: .05rem;
+  padding: 10px;
+  border-style: none;
+  width: 200px;
+  height: 50px;
+
+}
+
+
+.btn.btn-serch:hover {
+  background-color: #2eca6a;
+  color: #000000;
+}
+
+.btn-list-all:hover {
+  color: #2eca6a;
+  text-decoration: none;
+}
+
+.margin-box{
+  margin-left: 20px;
+  margin-right: 50px;
 }
