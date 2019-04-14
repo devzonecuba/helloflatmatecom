@@ -2067,3 +2067,9 @@ footer .credits {
   margin-left: 20px;
   margin-right: 50px;
 }
+
+.fa-10x{
+  font-size: 10rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
