@@ -2076,5 +2076,33 @@ footer .credits {
 
 .select-magin{
   margin: 10px ;
+}
 
+.btn-facebook{
+  background-color:#005cbf;
+  color: #ffffff;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 0px;
+}
+
+.btn-google{
+  background-color:#f23f3f;
+  color: #ffffff;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 0px;
+}
+
+.box-register{
+  max-width: 400px;
+  padding: 5px;
+}
+
+.btn-property{
+  width: 100px;
+  border-radius: 0px;
+  margin: 5px
 }

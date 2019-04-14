@@ -31,6 +31,117 @@
     </head>
 
     <body>
+
+        {#Modal Registrarse#}
+        <!-- Modal -->
+        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog box-register" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <button type="button" class="btn btn-facebook"><span class="fa fa-facebook-official"></span> Seguir con Facebook</button>
+                        <button type="button" class="btn btn-google"><span class="fa fa-google"></span> Seguir con Google</button>
+
+                        <hr>
+
+                        <div style="padding-left: 5px;padding-right: 5px">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Correo</label>
+                                    <input type="text" style="border-radius: 0px" class="form-control" id="recipient-name" placeholder="Correo">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Nombre</label>
+                                    <input type="text" style="border-radius: 0px" class="form-control" id="recipient-name" placeholder="Nombre">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Apellido</label>
+                                    <input type="text" style="border-radius: 0px" class="form-control" id="recipient-name" placeholder="Apellido">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Contraseña</label>
+                                    <input type="password" style="border-radius: 0px" class="form-control" id="recipient-name" placeholder="Contraseña">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Confirmar Contraseña</label>
+                                    <input type="password" style="border-radius: 0px" class="form-control" id="recipient-name" placeholder="Confirmar Contraseña">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <div class="container" style="text-align: center">
+                                        <button type="button" class="btn btn-primary btn-property">Aceptar</button>
+                                        <button type="button" class="btn btn-danger btn-property" data-dismiss="modal">Cancelar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        {#Modal Session#}
+        <div class="modal fade" id="sessionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog box-register" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <button type="button" class="btn btn-facebook"><span class="fa fa-facebook-official"></span> Seguir con Facebook</button>
+                        <button type="button" class="btn btn-google"><span class="fa fa-google"></span> Seguir con Google</button>
+
+                        <hr>
+
+                        <div style="padding-left: 5px;padding-right: 5px">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Correo</label>
+                                    <input type="text" style="border-radius: 0px" class="form-control" id="recipient-name" placeholder="Correo">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Contraseña</label>
+                                    <input type="password" style="border-radius: 0px" class="form-control" id="recipient-name" placeholder="Contraseña">
+                                </div>
+
+                                <div class="modal-footer">
+                                    <div class="container" style="text-align: center">
+                                        <button type="button" class="btn btn-primary btn-property">Aceptar</button>
+                                        <button type="button" class="btn btn-danger btn-property" data-dismiss="modal">Cancelar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
         <div class="click-closed"></div>
         <!--/ Form Search Star /-->
         <div class="box-collapse">
@@ -153,11 +264,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="property-grid.html">Registrase</a>
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#registerModal">Registrarse</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="property-grid.html">Iniciar Seción</a>
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#sessionModal">Iniciar Seción</a>
                         </li>
                     </ul>
                 </div>
@@ -170,10 +281,11 @@
         <!--/ Nav End /-->
 
 
+
+
         {% block body %}
 
         {% endblock %}
-
 
         <footer>
             <div class="container">
@@ -198,11 +310,11 @@
                                 </li>
 
                                 <li class="list-inline-item">
-                                    <a href="#">Registrase</a>
+                                    <a href="#" href="#" data-toggle="modal" data-target="#registerModal">Registrase</a>
                                 </li>
 
                                 <li class="list-inline-item">
-                                    <a href="#">Iniciar Sesión</a>
+                                    <a href="#" data-toggle="modal" data-target="#sessionModal">Iniciar Sesión</a>
                                 </li>
                             </ul>
                         </nav>
