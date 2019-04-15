@@ -278,7 +278,7 @@ a:hover {
 
 .title-box-d {
   padding-bottom: 1.8rem;
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
   position: relative;
 }
 
@@ -2131,4 +2131,12 @@ footer .credits {
   background-color: transparent;
   padding-right: 0;
   padding-left: 0;
+}
+
+.select-magin-top{
+  margin-top: 20px ;
+}
+
+.checkbox-magin-bottom{
+  margin-bottom: 10px ;
 }
