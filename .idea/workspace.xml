@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b566aff4-b3de-455c-a4fd-10ce00cf5d7d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/contact/index.html.twig" afterPath="$PROJECT_DIR$/templates/contact/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/property/index.html.twig" afterPath="$PROJECT_DIR$/templates/property/index.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/contact/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="48" column="411" lean-forward="false" selection-start-line="48" selection-start-column="411" selection-end-line="48" selection-end-column="411" />
+            <state relative-caret-position="215">
+              <caret line="49" column="47" lean-forward="false" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
               </folding>
@@ -277,7 +276,7 @@
       <workItem from="1555202906427" duration="16914000" />
       <workItem from="1555262905120" duration="15069000" />
       <workItem from="1555288908955" duration="4901000" />
-      <workItem from="1555329695355" duration="2501000" />
+      <workItem from="1555329695355" duration="3381000" />
     </task>
     <task id="LOCAL-00001" summary="Direcciones de img">
       <created>1555130509179</created>
@@ -290,7 +289,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53970000" />
+    <option name="totallyTimeSpent" value="54850000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -303,8 +302,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1002" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17289221" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17289221" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -577,8 +577,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/contact/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="48" column="411" lean-forward="false" selection-start-line="48" selection-start-column="411" selection-end-line="48" selection-end-column="411" />
+        <state relative-caret-position="215">
+          <caret line="49" column="47" lean-forward="false" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
           </folding>
