@@ -26,4 +26,24 @@ class PropertyController extends AbstractController
             'controller_name' => 'PropertyController',
         ]);
     }
+
+    /**
+     * @Route("/apartaments", name="apartaments")
+     */
+    public function apartaments()
+    {
+        return $this->render('property/apartaments.html.twig', [
+            'controller_name' => 'PropertyController',
+        ]);
+    }
+
+    /**
+     * @Route("/flats", name="flats")
+     */
+    public function flats()
+    {
+        return $this->render('property/flats.html.twig', [
+            'controller_name' => 'PropertyController',
+        ]);
+    }
 }
