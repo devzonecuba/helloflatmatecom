@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b566aff4-b3de-455c-a4fd-10ce00cf5d7d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/img/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/img/favicon.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/PropertyController.php" afterPath="$PROJECT_DIR$/src/Controller/PropertyController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html.twig" afterPath="$PROJECT_DIR$/templates/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/property/rooms.html.twig" afterPath="$PROJECT_DIR$/templates/property/rooms.html.twig" />
-    </list>
+    <list default="true" id="b566aff4-b3de-455c-a4fd-10ce00cf5d7d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -350,7 +343,7 @@
       <workItem from="1555367550657" duration="1253000" />
       <workItem from="1555371513644" duration="647000" />
       <workItem from="1555416219917" duration="1464000" />
-      <workItem from="1555429572566" duration="3728000" />
+      <workItem from="1555429572566" duration="3805000" />
     </task>
     <task id="LOCAL-00001" summary="Direcciones de img">
       <created>1555130509179</created>
@@ -363,7 +356,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74281000" />
+    <option name="totallyTimeSpent" value="74358000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
