@@ -46,4 +46,14 @@ class PropertyController extends AbstractController
             'controller_name' => 'PropertyController',
         ]);
     }
+
+    /**
+     * @Route("/reservation", name="reservation")
+     */
+    public function reservation()
+    {
+        return $this->render('property/reservation.html.twig', [
+            'controller_name' => 'PropertyController',
+        ]);
+    }
 }
