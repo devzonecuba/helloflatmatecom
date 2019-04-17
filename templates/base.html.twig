@@ -158,25 +158,25 @@
                     <div class="row">
 
                         {#Universidad#}
+                        {#<div class="col-md-6 mb-2">#}
+                            {#<div class="form-group">#}
+                                {#<label for="Type">Universidad</label>#}
+                                {#<select class="form-control form-control-lg form-control-a" id="Type">#}
+                                    {#<option>Universidad</option>#}
+                                    {#<option>ESIC</option>#}
+                                    {#<option>ESAT</option>#}
+                                    {#<option>UCH-CEU</option>#}
+                                    {#<option>UEM</option>#}
+                                    {#<option>UPV</option>#}
+                                    {#<option>UPV</option>#}
+                                    {#<option>Universidad de Valencia</option>#}
+                                    {#<option>Universidad Catolica</option>#}
+                                {#</select>#}
+                            {#</div>#}
+                        {#</div>#}
                         <div class="col-md-6 mb-2">
                             <div class="form-group">
-                                <label for="Type">Universidad</label>
-                                <select class="form-control form-control-lg form-control-a" id="Type">
-                                    <option>Universidad</option>
-                                    <option>ESIC</option>
-                                    <option>ESAT</option>
-                                    <option>UCH-CEU</option>
-                                    <option>UEM</option>
-                                    <option>UPV</option>
-                                    <option>UPV</option>
-                                    <option>Universidad de Valencia</option>
-                                    <option>Universidad Catolica</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <div class="form-group">
-                                <label for="city">Ciudad</label>
+                                <label for="city">Zona</label>
                                 <select class="form-control form-control-lg form-control-a" id="city">
                                     <option>Benimacle</option>
                                     <option>Blasco Ibañez</option>
@@ -185,6 +185,18 @@
                                     <option>FDO Catolico</option>
                                     <option>Guimera</option>
                                     <option>Mocada</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-2">
+                            <div class="form-group">
+                                <label for="city">Chicas/Chicos</label>
+                                <select class="form-control form-control-lg form-control-a" id="tipo">
+                                    <option>Chicas</option>
+                                    <option>Chicos</option>
+                                    <option>Mixtos</option>
+
                                 </select>
                             </div>
                         </div>
@@ -233,8 +245,8 @@
                     <span></span>
                 </button>
 
-                <a class="navbar-brand text-brand" href="{{ url('home') }}">HELLOFLAT<span class="color-b">MATE</span></a>
-                {#<a class="navbar-brand text-brand" href="{{ url('home') }}"><img src="assets/img/logo.png"></a>#}
+                {#<a class="navbar-brand text-brand" href="{{ url('home') }}">HELLOFLAT<span class="color-b">MATE</span></a>#}
+                <a class="navbar-brand text-brand" href="{{ url('home') }}"><img src="assets/img/logohello.png"></a>
 
                 <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
                         data-target="#navbarTogglerDemo01" aria-expanded="false">
@@ -445,7 +457,6 @@
 
             <!-- Select2 -->
             <script src="{{ asset('assets/select2/select2.min.js') }}"></script>
-            <script src="{{ asset('assets/select2/select2.full.min') }}"></script>
 
             <!-- Contact Form JavaScript File -->
             <script src="{{ asset('assets/contactform/contactform.js') }}"></script>
