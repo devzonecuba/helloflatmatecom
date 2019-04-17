@@ -14,31 +14,50 @@
                         <div class="amenities-list color-text-a">
                             <table>
                                 <tr>
-                                    <td width="200px"><h5>Dirección</h5></td>
-                                    <td width="200px"><h5>Calle Valecia</h5></td>
+                                    <td width="400px"><b>Dirección</b></td>
+                                    <td width="200px">Calle Valecia</td>
                                 </tr>
                                 <tr>
-                                    <td width="200px"><h5>Desde </h5></td>
-                                    <td width="200px"><h5>27/07/2019</h5></td>
+                                    <td width="400px"><b>Desde </b></td>
+                                    <td width="200px">27/07/2019</td>
                                 </tr>
                                 <tr>
-                                    <td width="200px"><h5>Hasta</h5></td>
-                                    <td width="200px"><h5>1/12/2019</h5></td>
+                                    <td width="400px"><b>Hasta</b></td>
+                                    <td width="200px">1/12/2019</td>
                                 </tr>
                                 <tr>
-                                    <td width="200px"><h5>Duración</h5></td>
-                                    <td width="200px"><h5>150 días</h5></td>
+                                    <td width="400px"><b>Duración</b></td>
+                                    <td width="200px">150 días</td>
                                 </tr>
+
                                 <tr>
-                                    <td width="200px"><h5>Total a pagar</h5></td>
-                                    <td width="200px"><h5>2000 €</h5></td>
+                                    <td width="400px"><b>Cantidad de Personas</b></td>
+                                    <td width="200px">3</td>
+                                </tr>
+
+                                <tr>
+                                    <td width="400px"><b>Costo de Servicios Adicionales</b></td>
+                                    <td width="200px"> 200 €</td>
+                                </tr>
+
+                                <tr>
+                                    <td width="200px"><h5><b>Total a pagar</b></h5></td>
+                                    <td width="200px"><h5><b>2000 €</b></h5></td>
+
                                 </tr>
 
                             </table>
 
+                            <br>
+                            <div class="" style="text-align: left">
+                                <a href="{{ url('rooms') }}" type="button" class="btn btn-a">Actualizar Reservación</a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
     </section>
@@ -72,40 +91,49 @@
                                         <div id="sendmessage">Your message has been sent. Thank you!</div>
                                         <div id="errormessage"></div>
                                         <div class="row">
-                                            <div class="col-md-12 mb-3">
+                                            <div class="col-md-6 mb-3">
                                                 <div class="form-group">
                                                     <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Nombre" data-rule="minlen:4" data-msg="Por favor, introduzca como minimo 4 caracteres">
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-12 mb-3">
+                                            <div class="col-md-6 mb-3">
                                                 <div class="form-group">
                                                     <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Apellido" data-rule="minlen:4" data-msg="Por favor, introduzca como minimo 4 caracteres">
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-group">
-                                                    <input name="subject" class="form-control form-control-lg form-control-a" placeholder="Telefono" data-rule="minlen:4" data-msg="Por favor, introduzca como minimo 4 caracteres">
-                                                    <div class="validation"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-12 mb-3">
-                                                <div class="form-group">
-                                                    <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Correo Electronico" data-rule="email" data-msg="Por favor, introduzca un correo valido">
-                                                    <div class="validation"></div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 mb-3">
+                                            <div class="col-md-6 mb-3">
                                                 <div class="form-group">
                                                     <input name="subject" class="form-control form-control-lg form-control-a" placeholder="DNI/Pasaporte" data-rule="minlen:4" data-msg="Por favor, introduzca como minimo 4 caracteres">
                                                     <div class="validation"></div>
                                                 </div>
                                             </div>
 
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group">
+                                                    <select class="form-control form-control-lg form-control-a" id="tipo">
+                                                        <option>Femenino</option>
+                                                        <option>Masculino</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group">
+                                                    <input name="subject" class="form-control form-control-lg form-control-a" placeholder="Telefono" data-rule="minlen:4" data-msg="Por favor, introduzca como minimo 4 caracteres">
+                                                    <div class="validation"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group">
+                                                    <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Correo Electronico" data-rule="email" data-msg="Por favor, introduzca un correo valido">
+                                                    <div class="validation"></div>
+                                                </div>
+                                            </div>
                                             <div class="col-md-12">
                                                 <button type="submit" class="btn btn-a">Confirmar</button>
                                             </div>
