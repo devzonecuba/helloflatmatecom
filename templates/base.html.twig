@@ -6,7 +6,7 @@
         <meta content="" name="keywords">
         <meta content="" name="description">
 
-        <title>{% block title %}RentRooms!{% endblock %}</title>
+        <title>{% block title %}HelloFlatmate!{% endblock %}</title>
         {% block stylesheets %}
             <!-- Favicons -->
             <link href="{{ asset('assets/img/fav-icon.png') }}" rel="icon">
@@ -332,10 +332,10 @@
                                 <div class="w-body-a">
                                     <ul class="list-unstyled">
                                         <li class="item-list-a">
-                                            <i class="fa fa-angle-right"></i> <a href="#">HelloRooms</a>
+                                            <i class="fa fa-angle-right"></i> <a href="{{ url('hellorooms') }}">HelloRooms</a>
                                         </li>
                                         <li class="item-list-a">
-                                            <i class="fa fa-angle-right"></i> <a href="#">Hello Owners</a>
+                                            <i class="fa fa-angle-right"></i> <a href="{{ url('helloowners') }}">Hello Owners</a>
                                         </li>
 
                                     </ul>
