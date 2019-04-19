@@ -9,7 +9,6 @@
                 <div class="col-md-12 col-lg-12">
                     <div class="title-single-box">
                         <h1 class="title-single">Detalles de la Facturación</h1>
-                        {#<h5>Detalles de la facturación!</h5>#}
 
                         <div class="amenities-list color-text-a">
                             <table>
@@ -62,8 +61,6 @@
         </div>
     </section>
 
-
-
     <!--/ Intro Single star /-->
     <section class="margin-single-line">
         <div class="container">
@@ -85,9 +82,9 @@
                 <div class="col-sm-12">
                     <div class="about-img-box">
                         <div class="col-sm-12">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <form class="form-a contactForm" action="" method="post" role="form">
+                            <form class="form-a contactForm" action="" method="post" role="form">
+                                <div class="row">
+                                    <div class="col-md-7">
                                         <div id="sendmessage">Your message has been sent. Thank you!</div>
                                         <div id="errormessage"></div>
                                         <div class="row">
@@ -138,19 +135,20 @@
                                                 <button type="submit" class="btn btn-a">Confirmar</button>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-                                <div class="col-md-5 section-md-t3">
-                                    <div class="icon-box section-b2">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <textarea id="textMessage" class="form-control" placeholder="Descripción" name="message" cols="45"
-                                                          rows="16" required></textarea>
+                                    </div>
+
+                                    <div class="col-md-5 section-md-t3">
+                                        <div class="icon-box section-b2">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <textarea id="textMessage" class="form-control" placeholder="Descripción" name="message"
+                                                              rows="8" required></textarea>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -158,9 +156,6 @@
         </div>
     </section>
     <!--/ About End /-->
-
-    <br>
-
 
 
 {% endblock %}
