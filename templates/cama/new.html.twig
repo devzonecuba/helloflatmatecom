@@ -1,0 +1,17 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}New Cama{% endblock %}
+
+{% block body %}
+
+   <h1>Create new Cama</h1>
+
+    {{ include('cama/_form.html.twig') }}
+
+    <a href="{{ path('cama_index') }}">back to list</a>
+
+ 
+{% endblock %}
+
+
+

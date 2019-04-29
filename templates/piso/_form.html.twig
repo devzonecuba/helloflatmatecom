@@ -1,0 +1,146 @@
+
+<form  id="myModal" action="{{path('reserva_new')}}" method="post"   form="form-horizontal" novalidate="">
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                {{ form_widget(form.precio,{'attr' : {'class' : 'form-control','placeholder' : 'Precio'}}) }}
+                {{ form_errors(form.precio) }}
+
+            </div>
+
+            <div class="col-sm-4">
+                {{ form_widget(form.canthabitaciones,{'attr' : {'class' : 'form-control','placeholder' : 'Cantidad de habitaciones'}}) }}
+                {{ form_errors(form.canthabitaciones) }}
+
+            </div>
+        
+</div>
+      <br>
+      
+
+         <div class="row">
+
+            <div class="col-sm-4">
+                {{ form_widget(form.cantbannos,{'attr' : {'class' : 'form-control','placeholder' : 'Cantidad de baños'}}) }}
+                {{ form_errors(form.cantbannos) }}
+
+            </div>
+              
+         
+            
+            <div class="col-sm-4">
+                {{ form_widget(form.pisocanthuesped,{'attr' : {'class' : 'form-control','placeholder' : 'Cantidad de huesped'}}) }}
+                {{ form_errors(form.pisocanthuesped) }}
+
+            </div>
+        </div>
+
+      <br>
+
+          <div class="row">
+
+
+            <div class="col-sm-2" >
+                <label for="exampleInputEmail1">Balcón <label class="text-danger glyphicon-text-size">*</label> </label>
+            </div>
+            <div class="col-sm-4">
+                {{ form_widget(form.pisobalcon,{'attr' : {'class' : 'form-control' }}) }}
+                {{ form_errors(form.pisobalcon) }}
+
+            </div>
+              <div class="col-sm-2" >
+                <label for="exampleInputEmail1">Patio <label class="text-danger glyphicon-text-size">*</label> </label>
+            </div>
+            <div class="col-sm-4">
+                {{ form_widget(form.pisopatio,{'attr' : {'class' : 'form-control'}}) }}
+                {{ form_errors(form.pisopatio) }}
+
+            </div>
+        </div>
+
+      <br>
+
+      <div class="row">
+
+
+            <div class="col-sm-2" >
+                <label for="exampleInputEmail1">Chicas <label class="text-danger glyphicon-text-size">*</label> </label>
+            </div>
+            <div class="col-sm-4">
+                {{ form_widget(form.chicas,{'attr' : {'class' : 'form-control'}}) }}
+                {{ form_errors(form.chicas) }}
+
+            </div>
+              
+    
+            <div class="col-sm-4">
+                {{ form_widget(form.Centrosalud,{'attr' : {'class' : 'form-control' ,'placeholder' : 'Centro de salud'}}) }}
+                {{ form_errors(form.Centrosalud) }}
+
+            </div>
+        </div>
+
+      <br>
+
+         <div class="row">
+
+            <div class="col-sm-4">
+                {{ form_widget(form.direccion,{'attr' : {'class' : 'form-control','placeholder' : 'Dirección'}}) }}
+                {{ form_errors(form.direccion) }}
+
+            </div>
+
+            
+            <div class="col-sm-4">
+                {{ form_widget(form.Zona,{'attr' : {'class' : 'form-control','placeholder' : 'Zona'}}) }}
+                {{ form_errors(form.Zona) }}
+
+            </div>
+           
+        </div>
+
+      <br>
+          <div class="row">
+
+
+         
+           
+            <div class="col-sm-4">
+                {{ form_widget(form.Supermercado,{'attr' : {'class' : 'form-control','placeholder' : 'Supermercado'}}) }}
+                {{ form_errors(form.Supermercado) }}
+
+            </div>
+
+              
+            <div class="col-sm-4">
+                {{ form_widget(form.Universidad,{'attr' : {'class' : 'form-control','placeholder' : 'Universidad'}}) }}
+                {{ form_errors(form.Universidad) }}
+
+            </div>
+           
+        </div>
+     <br>
+    <div class="col-sm-4">
+                {{ form_widget(form.Habitaciones,{'attr' : {'class' : 'form-control','placeholder' : 'Habitaciones'}}) }}
+                {{ form_errors(form.Habitaciones) }}
+
+            </div>
+           
+           </div>
+  
+         
+
+            <div class="modal-footer">
+                <div class="row ">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " >
+
+                        <button  title="Adicionar registro de accidentalidad" type="submit" class=" btn   btn-primary" > <span class="glyphicon glyphicon-plus"></span> Adicionar</button>
+                        {{ form_rest(form) }}
+
+                    </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " >
+                    <button title="limpiar formulario" class="btn btn-success " type="reset"><span class="glyphicon glyphicon-minus"></span> Limpiar</button>
+
+                    </div>
+                </div>

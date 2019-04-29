@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <title>{% block title %}HelloFlatmate!{% endblock %}</title>
+    {% block stylesheets %}
+
+        <!-- Favicons -->
+        <link href="{{ asset('assets/img/fav-icon.png') }}" rel="icon">
+        <link href="{{ asset('assets/img/icon-touch.png') }}" rel="apple-touch-icon">
+
+        <!-- Global stylesheets -->
+        {#<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">#}
+
+        <link href="{{ asset('assets-current/assets/css/icons/icomoon/styles.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('assets-current/assets/css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('assets-current/assets/css/core.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('assets-current/assets/css/components.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('assets-current/assets/css/colors.css') }}" rel="stylesheet" type="text/css">
+        <!-- /global stylesheets -->
+
+    {% endblock %}
+
+
+</head>
+
+<body class="login-container">
+
+
+    {% block body %}
+
+    {% endblock %}
+
+
+    {% block javascript %}
+        <!-- Core JS files -->
+        <script src="{{ asset('assets-current/assets/js/plugins/loaders/pace.min.js') }}"></script>
+        <script src="{{ asset('assets-current/assets/js/core/libraries/jquery.min.js') }}"></script>
+        <script src="{{ asset('assets-current/assets/js/core/libraries/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('assets-current/assets/js/plugins/loaders/blockui.min.js') }}"></script>
+        <!-- /core JS files -->
+
+        <!-- Theme JS files -->
+        <script src="{{ asset('assets-current/assets/js/core/app.js') }}"></script>
+        <!-- /theme JS files -->
+    {% endblock %}
+
+</body>
+
+
+</html>

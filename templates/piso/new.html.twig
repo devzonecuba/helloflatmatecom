@@ -1,0 +1,11 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}New Piso{% endblock %}
+
+{% block body %}
+    <h1>Crear nuevo Piso</h1>
+
+    {{ include('piso/_form.html.twig') }}
+
+    <a href="{{ path('piso_index') }}">back to list</a>
+{% endblock %}

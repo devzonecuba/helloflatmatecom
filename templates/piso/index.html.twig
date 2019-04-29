@@ -1,0 +1,49 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}Piso index{% endblock %}
+
+{% block body %}
+    <h1>Piso index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Direccion</th>
+                <th>Precio</th>
+                <th>Canthabitaciones</th>
+                <th>Cantbannos</th>
+                <th>Pisopatio</th>
+                <th>Pisobalcon</th>
+                <th>Chicas</th>
+                <th>Pisocanthuesped</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for piso in pisos %}
+            <tr>
+                <td>{{ piso.id }}</td>
+                <td>{{ piso.direccion }}</td>
+                <td>{{ piso.precio }}</td>
+                <td>{{ piso.canthabitaciones }}</td>
+                <td>{{ piso.cantbannos }}</td>
+                <td>{{ piso.pisopatio ? 'Yes' : 'No' }}</td>
+                <td>{{ piso.pisobalcon ? 'Yes' : 'No' }}</td>
+                <td>{{ piso.chicas ? 'Yes' : 'No' }}</td>
+                <td>{{ piso.pisocanthuesped }}</td>
+                <td>
+                    <a href="{{ path('piso_show', {'id': piso.id}) }}">show</a>
+                    <a href="{{ path('piso_edit', {'id': piso.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="10">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('piso_new') }}">Create new</a>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}New Contacto{% endblock %}
+
+{% block body %}
+    <h1>Crear nuevo contacto</h1>
+
+    {{ include('contacto/_form.html.twig') }}
+
+    <a href="{{ path('contacto_index') }}">back to list</a>
+{% endblock %}

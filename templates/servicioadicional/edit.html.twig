@@ -1,0 +1,13 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}Edit Servicioadicional{% endblock %}
+
+{% block body %}
+    <h1>Edit Servicioadicional</h1>
+
+    {{ include('servicioadicional/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('servicioadicional_index') }}">back to list</a>
+
+    {{ include('servicioadicional/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}Piso{% endblock %}
+
+{% block body %}
+    <h1>Piso</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ piso.id }}</td>
+            </tr>
+            <tr>
+                <th>Direccion</th>
+                <td>{{ piso.direccion }}</td>
+            </tr>
+            <tr>
+                <th>Precio</th>
+                <td>{{ piso.precio }}</td>
+            </tr>
+            <tr>
+                <th>Canthabitaciones</th>
+                <td>{{ piso.canthabitaciones }}</td>
+            </tr>
+            <tr>
+                <th>Cantbannos</th>
+                <td>{{ piso.cantbannos }}</td>
+            </tr>
+            <tr>
+                <th>Pisopatio</th>
+                <td>{{ piso.pisopatio ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>Pisobalcon</th>
+                <td>{{ piso.pisobalcon ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>Chicas</th>
+                <td>{{ piso.chicas ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>Pisocanthuesped</th>
+                <td>{{ piso.pisocanthuesped }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('piso_index') }}">back to list</a>
+
+    <a href="{{ path('piso_edit', {'id': piso.id}) }}">edit</a>
+
+    {{ include('piso/_delete_form.html.twig') }}
+{% endblock %}

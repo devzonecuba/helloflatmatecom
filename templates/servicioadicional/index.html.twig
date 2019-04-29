@@ -1,0 +1,37 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}Servicioadicional index{% endblock %}
+
+{% block body %}
+    <h1>Servicioadicional index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombreservicio</th>
+                <th>Precio</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for servicioadicional in servicioadicionals %}
+            <tr>
+                <td>{{ servicioadicional.id }}</td>
+                <td>{{ servicioadicional.nombreservicio }}</td>
+                <td>{{ servicioadicional.precio }}</td>
+                <td>
+                    <a href="{{ path('servicioadicional_show', {'id': servicioadicional.id}) }}">show</a>
+                    <a href="{{ path('servicioadicional_edit', {'id': servicioadicional.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('servicioadicional_new') }}">Create new</a>
+{% endblock %}

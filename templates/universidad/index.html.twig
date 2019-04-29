@@ -1,0 +1,35 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}Universidad index{% endblock %}
+
+{% block body %}
+    <h1>Universidad index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombreuniversidad</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for universidad in universidads %}
+            <tr>
+                <td>{{ universidad.id }}</td>
+                <td>{{ universidad.nombreuniversidad }}</td>
+                <td>
+                    <a href="{{ path('universidad_show', {'id': universidad.id}) }}">show</a>
+                    <a href="{{ path('universidad_edit', {'id': universidad.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('universidad_new') }}">Create new</a>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}Servicioadicional{% endblock %}
+
+{% block body %}
+    <h1>Servicioadicional</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ servicioadicional.id }}</td>
+            </tr>
+            <tr>
+                <th>Nombreservicio</th>
+                <td>{{ servicioadicional.nombreservicio }}</td>
+            </tr>
+            <tr>
+                <th>Precio</th>
+                <td>{{ servicioadicional.precio }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('servicioadicional_index') }}">back to list</a>
+
+    <a href="{{ path('servicioadicional_edit', {'id': servicioadicional.id}) }}">edit</a>
+
+    {{ include('servicioadicional/_delete_form.html.twig') }}
+{% endblock %}

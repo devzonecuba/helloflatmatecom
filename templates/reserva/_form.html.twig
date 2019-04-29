@@ -1,0 +1,112 @@
+
+<form  id="myModal" action="{{path('reserva_new')}}" method="post"   form="form-horizontal" novalidate="">
+
+        <div class="row">
+
+
+           
+            <div class="col-sm-4">
+                {{ form_widget(form.fechainicio,{'attr' : {'class' : 'form-control' , 'placeholder' : 'fecha inicio'}}) }}
+                {{ form_errors(form.fechainicio) }}
+
+            </div>
+
+           
+            <div class="col-sm-4">
+                {{ form_widget(form.fechafin,{'attr' : {'class' : 'form-control', 'placeholder' : 'fecha fin'}}) }}
+                {{ form_errors(form.fechafin) }}
+
+            </div>
+        </div>
+
+      <br>
+        
+
+      <br>
+
+         <div class="row">
+
+
+          
+            <div class="col-sm-4">
+                {{ form_widget(form.Cliente,{'attr' : {'class' : 'form-control', 'placeholder' : 'Cliente'}}) }}
+                {{ form_errors(form.Cliente) }}
+
+            </div>
+            
+            <div class="col-sm-4">
+                {{ form_widget(form.pasaporte,{'attr' : {'class' : 'form-control', 'placeholder' : 'Pasaporte'}}) }}
+                {{ form_errors(form.pasaporte) }}
+
+            </div>
+        </div>
+
+      <br>
+
+          <div class="row">
+
+
+          
+            <div class="col-sm-4">
+                {{ form_widget(form.sexo,{'attr' : {'class' : 'form-control', 'placeholder' : 'sexo'}}) }}
+                {{ form_errors(form.sexo) }}
+
+            </div>
+           
+            <div class="col-sm-4">
+                {{ form_widget(form.telefono,{'attr' : {'class' : 'form-control', 'placeholder' : 'telefono'}}) }}
+                {{ form_errors(form.telefono) }}
+
+            </div>
+        </div>
+
+      <br>
+
+      <div class="row">
+
+
+          
+            <div class="col-sm-4">
+                {{ form_widget(form.Casavacacional,{'attr' : {'class' : 'form-control', 'placeholder' : 'casa vacaional'}}) }}
+                {{ form_errors(form.Casavacacional) }}
+
+            </div>
+            
+            <div class="col-sm-4">
+                {{ form_widget(form.Habitaciones,{'attr' : {'class' : 'form-control', 'placeholder' : 'habitaciones'}}) }}
+                {{ form_errors(form.Habitaciones) }}
+
+            </div>
+        </div>
+
+      <br>
+
+         <div class="row">
+
+
+           
+            <div class="col-sm-10">
+                {{ form_widget(form.descripcion,{'attr' : {'class' : 'form-control', 'placeholder' : 'Descripcion'}}) }}
+                {{ form_errors(form.descripcion) }}
+
+            </div>
+           
+        </div>
+
+      <br>
+  
+         
+
+            <div class="modal-footer">
+                <div class="row ">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " >
+
+                        <button  title="Adicionar registro de accidentalidad" type="submit" class=" btn   btn-primary" > <span class="glyphicon glyphicon-plus"></span> Adicionar</button>
+                        {{ form_rest(form) }}
+
+                    </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " >
+                    <button title="limpiar formulario" class="btn btn-success " type="reset"><span class="glyphicon glyphicon-minus"></span> Limpiar</button>
+
+                    </div>
+                </div>

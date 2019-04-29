@@ -1,0 +1,40 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}Cliente index{% endblock %}
+
+{% block body %}
+    <h1>Habitaciones</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ habitacione.id }}</td>
+            </tr>
+            <tr>
+                <th>Cantcamas</th>
+                <td>{{ habitacione.cantcamas }}</td>
+            </tr>
+            <tr>
+                <th>Nombrepromocion</th>
+                <td>{{ habitacione.nombrepromocion }}</td>
+            </tr>
+            <tr>
+                <th>Descripcion</th>
+                <td>{{ habitacione.descripcion }}</td>
+            </tr>
+            <tr>
+                <th>Disponible</th>
+                <td>{{ habitacione.disponible ? 'Yes' : 'No' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('habitaciones_index') }}">back to list</a>
+
+    <a href="{{ path('habitaciones_edit', {'id': habitacione.id}) }}">edit</a>
+
+    <a class="btn btn-primary" href="{{ path('reserva_new' )}}">reservar</a>
+
+    {{ include('habitaciones/_delete_form.html.twig') }}
+{% endblock %}

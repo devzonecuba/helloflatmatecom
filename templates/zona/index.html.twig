@@ -1,0 +1,59 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}Zona index{% endblock %}
+
+{% block body %}
+
+
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Zona
+        </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <!-- Small boxes (Stat box) -->
+     <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Data Table With Full Features</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+      <table id="example1" class="table table-bordered table-striped"">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombrezona</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for zona in zonas %}
+            <tr>
+                <td>{{ zona.id }}</td>
+                <td>{{ zona.nombrezona }}</td>
+                <td>
+                    <a href="{{ path('zona_show', {'id': zona.id}) }}">show</a>
+                    <a href="{{ path('zona_edit', {'id': zona.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    </div>
+
+    <a href="{{ path('zona_new') }}">Create new</a>
+
+   
+    </section>
+  
+
+    
+{% endblock %}

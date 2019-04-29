@@ -1,0 +1,13 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}Cliente index{% endblock %}
+
+{% block body %}
+    <h1>Edit Casavacacional</h1>
+
+    {{ include('casavacacional/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('casavacacional_index') }}">back to list</a>
+
+    {{ include('casavacacional/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}Edit Piso{% endblock %}
+
+{% block body %}
+    <h1>Edit Piso</h1>
+
+    {{ include('piso/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('piso_index') }}">back to list</a>
+
+    {{ include('piso/_delete_form.html.twig') }}
+{% endblock %}

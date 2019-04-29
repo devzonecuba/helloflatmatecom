@@ -1,0 +1,59 @@
+{% extends 'login.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+    <!-- Page container -->
+    <div class="page-container">
+
+        <!-- Page content -->
+        <div class="page-content">
+
+            <!-- Main content -->
+            <div class="content-wrapper">
+
+                <!-- Content area -->
+                <div class="content">
+
+                    <!-- Simple login form -->
+                    <form action="{{ url('config') }}">
+                        <div class="panel panel-body login-form">
+                            <div class="text-center">
+                                <div class="icon-object border-blue-700 text-blue-700"><i class="icon-reading"></i></div>
+                                <h5 class="content-group">Ingrese en su cuenta <small class="display-block">Entre sus datos</small></h5>
+                            </div>
+
+                            <div class="form-group has-feedback has-feedback-left">
+                                <input type="text" class="form-control" placeholder="Usuario">
+                                <div class="form-control-feedback">
+                                    <i class="icon-user text-muted"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-group has-feedback has-feedback-left">
+                                <input type="password" class="form-control" placeholder="Contraseña">
+                                <div class="form-control-feedback">
+                                    <i class="icon-lock2 text-muted"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn bg-blue-700 btn-block">Entrar <i class="icon-circle-right2 position-right"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- /simple login form -->
+
+                </div>
+                <!-- /content area -->
+
+            </div>
+            <!-- /main content -->
+
+        </div>
+        <!-- /page content -->
+
+    </div>
+    <!-- /page container -->
+{% endblock %}

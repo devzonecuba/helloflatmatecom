@@ -1,0 +1,85 @@
+<form  id="myModal" action="{{path('habitaciones_new')}}" method="post"   form="form-horizontal" novalidate="">
+
+        <div class="row">
+
+
+           
+            <div class="col-sm-4">
+                {{ form_widget(form.cantcamas,{'attr' : {'class' : 'form-control','placeholder' : 'Cantidad de camas'}}) }}
+                {{ form_errors(form.cantcamas) }}
+
+            </div>
+
+            
+          
+            <div class="col-sm-4">
+                {{ form_widget(form.nombrepromocion,{'attr' : {'class' : 'form-control','placeholder' : 'Nombre de promocion'}}) }}
+                {{ form_errors(form.nombrepromocion) }}
+
+            </div>
+        </div>
+
+      <br>
+         <div class="row">
+</div>
+
+      <br>
+<div class="row">
+
+            <div class="col-sm-4">
+                {{ form_widget(form.disponible,{'attr' : {'class' : 'form-control','placeholder' : 'disponible' }}) }}
+                {{ form_errors(form.disponible) }}
+
+            </div>
+              
+            <div class="col-sm-4">
+                {{ form_widget(form.Cama,{'attr' : {'class' : 'form-control',  'placeholder' : 'Tipo de cama'}}) }}
+                {{ form_errors(form.Cama) }}
+
+            </div>
+            </div>
+<div class="row">
+
+            <div class="col-sm-4">
+                {{ form_widget(form.Servicios,{'attr' : {'class' : 'form-control','placeholder' : 'Servicios'}}) }}
+                {{ form_errors(form.Servicios) }}
+
+            </div>
+           
+        </div>
+
+      <br>
+   
+
+      <br>
+
+         <div class="row">
+
+
+          
+            <div class="col-sm-10">
+                {{ form_widget(form.descripcion,{'attr' : {'class' : 'form-control', 'placeholder' : 'Descripcion'}}) }}
+                {{ form_errors(form.descripcion) }}
+
+            </div>
+           
+        </div>
+
+      <br>
+  
+         
+
+            <div class="modal-footer">
+                <div class="row ">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " >
+
+                        <button  title="Adicionar registro de accidentalidad" type="submit" class=" btn   btn-primary" > <span class="glyphicon glyphicon-plus"></span> Adicionar</button>
+                        {{ form_rest(form) }}
+
+                    </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " >
+                    <button title="limpiar formulario" class="btn btn-success " type="reset"><span class="glyphicon glyphicon-minus"></span> Limpiar</button>
+
+                    </div>
+                </div>
+                 </div>

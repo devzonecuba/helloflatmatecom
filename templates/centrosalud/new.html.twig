@@ -1,0 +1,11 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}New Centrosalud{% endblock %}
+
+{% block body %}
+    <h1>Crear nuevo centro de salud/h1>
+
+    {{ include('centrosalud/_form.html.twig') }}
+
+    <a href="{{ path('centrosalud_index') }}">back to list</a>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}Cliente index{% endblock %}
+
+{% block body %}
+    <h1>Casavacacional index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Casadireccion</th>
+                <th>Nombrepromocion</th>
+                <th>Casaprecio</th>
+                <th>Cantbannos</th>
+                <th>Canthabitaciones</th>
+                <th>Patio</th>
+                <th>Balcon</th>
+                <th>Canthuesped</th>
+                <th>Descripcion</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for casavacacional in casavacacionals %}
+            <tr>
+                <td>{{ casavacacional.id }}</td>
+                <td>{{ casavacacional.casadireccion }}</td>
+                <td>{{ casavacacional.nombrepromocion }}</td>
+                <td>{{ casavacacional.casaprecio }}</td>
+                <td>{{ casavacacional.cantbannos }}</td>
+                <td>{{ casavacacional.canthabitaciones }}</td>
+                <td>{{ casavacacional.patio ? 'Yes' : 'No' }}</td>
+                <td>{{ casavacacional.balcon ? 'Yes' : 'No' }}</td>
+                <td>{{ casavacacional.canthuesped }}</td>
+                <td>{{ casavacacional.descripcion }}</td>
+                <td>
+                    <a href="{{ path('casavacacional_show', {'id': casavacacional.id}) }}">show</a>
+                    <a href="{{ path('casavacacional_edit', {'id': casavacacional.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="11">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('casavacacional_new') }}">Create new</a>
+{% endblock %}

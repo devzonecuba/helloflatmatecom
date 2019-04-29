@@ -1,0 +1,34 @@
+<form   action="{{path('universidad_new')}}" method="post"   form="form-horizontal" novalidate="">
+
+           <div class="row">
+
+
+           
+            <div class="col-sm-4">
+                {{ form_widget(form.nombreuniversidad,{'attr' : {'class' : 'form-control', 'placeholder' : 'Nombre Universidad'}}) }}
+                {{ form_errors(form.nombreuniversidad) }}
+
+            </div>
+           
+        </div>
+
+      <br>
+            
+      <br>
+  
+         
+
+            <div class="modal-footer">
+                <div class="row ">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " >
+
+                        <button  title="Adicionar registro de accidentalidad" type="submit" class=" btn   btn-primary" > <span class="glyphicon glyphicon-plus"></span> Adicionar</button>
+                        {{ form_rest(form) }}
+
+                    </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 " >
+                    <button title="limpiar formulario" class="btn btn-success " type="reset"><span class="glyphicon glyphicon-minus"></span> Limpiar</button>
+
+                    </div>
+                </div>
+                </div>

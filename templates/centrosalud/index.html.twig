@@ -1,0 +1,35 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}Centrosalud index{% endblock %}
+
+{% block body %}
+    <h1>Centrosalud index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombrecentro</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for centrosalud in centrosaluds %}
+            <tr>
+                <td>{{ centrosalud.id }}</td>
+                <td>{{ centrosalud.nombrecentro }}</td>
+                <td>
+                    <a href="{{ path('centrosalud_show', {'id': centrosalud.id}) }}">show</a>
+                    <a href="{{ path('centrosalud_edit', {'id': centrosalud.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('centrosalud_new') }}">Create new</a>
+{% endblock %}

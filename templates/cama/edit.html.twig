@@ -1,0 +1,13 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}Edit Cama{% endblock %}
+
+{% block body %}
+    <h1>Edit Cama</h1>
+
+    {{ include('cama/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('cama_index') }}">back to list</a>
+
+    {{ include('cama/_delete_form.html.twig') }}
+{% endblock %}

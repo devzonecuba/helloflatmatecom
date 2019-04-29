@@ -1,0 +1,41 @@
+{% extends 'config.html.twig' %}
+
+{% block title %}Cliente index{% endblock %}
+
+{% block body %}
+    <h1>Habitaciones index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Cantcamas</th>
+                <th>Nombrepromocion</th>
+                <th>Descripcion</th>
+                <th>Disponible</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for habitacione in habitaciones %}
+            <tr>
+                <td>{{ habitacione.id }}</td>
+                <td>{{ habitacione.cantcamas }}</td>
+                <td>{{ habitacione.nombrepromocion }}</td>
+                <td>{{ habitacione.descripcion }}</td>
+                <td>{{ habitacione.disponible ? 'Yes' : 'No' }}</td>
+                <td>
+                    <a href="{{ path('habitaciones_show', {'id': habitacione.id}) }}">show</a>
+                    <a href="{{ path('habitaciones_edit', {'id': habitacione.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="6">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('habitaciones_new') }}">Create new</a>
+{% endblock %}
